@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLIXER filmes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0;
+            font-family: var(--bs-body-font-family);
+            font-size: var(--bs-body-font-size);
+            font-weight: var(--bs-body-font-weight);
+            line-height: var(--bs-body-line-height);
+            color: var(--bs-body-color);
+            text-align: var(--bs-body-text-align);
+            background-color: #000000;
+            /* Preto */
+            -webkit-text-size-adjust: 100%;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .btn-primary {
+            --bs-btn-color: #fff;
+            --bs-btn-bg: #ab59eb;
+            /* Roxo */
+            --bs-btn-border-color: #ffffff;
+            /* Branco */
+            --bs-btn-hover-color: #fff;
+            --bs-btn-hover-bg: #5b3d79;
+            /* Tom mais forte de roxo */
+            --bs-btn-hover-border-color: hsl(292, 39%, 69%);
+            --bs-btn-focus-shadow-rgb: 49, 132, 253;
+        }
+
+        .navbar {
+            background-color: #4c2568;
+            /* Roxo */
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #fff;
+        }
+
+        .nav-link:hover {
+            color: #cb94e7;
+        }
+
+        .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+        }
+
+        .card {
+            background-color: #171717;
+            color: #fff;
+            border: 1px solid #4B0082;
+        }
+
+        .card-title {
+            color: #cb94e7;
+        }
+    </style>
+
+    <link rel="stylesheet" href="css/card.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Flixer</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#filmes"></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Filmes
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Comédia</a></li>
+                            <li><a class="dropdown-item" href="#">Romance</a></li>
+                            <li><a class="dropdown-item" href="#">Animação</a></li>
+                            <li><a class="dropdown-item" href="#">Suspense</a></li>
+                            <li><a class="dropdown-item" href="#">Terror</a></li>
+                            <li><a class="dropdown-item" href="#">Anime</a></li>
+                            <li><a class="dropdown-item" href="#">Ação</a></li>
+                            <li><a class="dropdown-item" href="#">Drama</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Contato
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">E-mail</a></li>
+                            <li><a class="dropdown-item" href="#">Redes Sociais</a></li>
+                            <li><a class="dropdown-item" href="#">Suporte</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <video width="100%" controls autoplay loop muted style="height: 500px; object-fit:cover; object-position:center;">
+        <source src="vid/DivertidaMente2.mp4" type="video/mp4">
+    </video>
+
+    <!-- Cards de Filmes e Séries -->
+    <section class="hero-section">
+        <div class="card-grid">
+            <a class="card" href="#">
+                <div class="card__background" style="background-image: url('img.1/comedia/A\ sogra\ perfeita.jfif')">
+                </div>
+                <div class="card__content">
+                    <p class="card__category">Comédia</p>
+                    <h3 class="card__heading">A Sogra Perfeita</h3>
+                </div>
+            </a>
+            <a class="card" href="#">
+                <div class="card__background"
+                    style="background-image: url(img.1/comedia/Cada\ um\ tgem\ a\ gemea\ que\ merece.jfif)">
+                </div>
+                <div class="card__content">
+                    <p class="card__category">Comédia</p>
+                    <h3 class="card__heading">Cada um tem a gêmea que merece</h3>
+                </div>
+            </a>
+            <a class="card" href="#">
+                <div class="card__background" style="background-image: url('img.1/comedia/Norbit.jfif')">
+                </div>
+                <div class="card__content">
+                    <p class="card__category">Comédia</p>
+                    <h3 class="card__heading">Norbit</h3>
+                </div>
+                </li>
+            </a>
+            <a class="card" href="#">
+                <div class="card__background" style="background-image: url('img.1/comedia/O\ porteiro.jfif')">
+                </div>
+                <div class="card__content">
+                    <p class="card__category">Comédia</p>
+                    <h3 class="card__heading">O Porteiro</h3>
+                </div>
+            </a>
+            <a class="card" href="#">
+                <div class="card__background" 
+                    style="background-image: url('img.1/romance/Como\ eu\ era\ antes\ de\ você.jfif')">
+                </div>
+                <div class="card__content">
+                    <p class="card__category">Romance</p>
+                    <h3 class="card__heading">Como Eu Era Antes de Você</h3>
+                </div>
+            </a>
+            <a class="card" href="#">
+                <div class="card__background"
+                    style="background-image: url(img.1/romance/Love.jfif)">
+                </div>
+                <div class="card__content">
+                    <p class="card__category">Romance</p>
+                    <h3 class="card__heading">Redeeming Love</h3>
+                </div>
+            </a>
+            <a class="card" href="#">
+                <div class="card__background"
+                    style="background-image: url(img.1/romance/O\ melhor\ de\ mim.jfif)">
+                </div>
+                <div class="card__content">
+                    <p class="card__category">Romance</p>
+                    <h3 class="card__heading">O melhor de mim</h3>
+                </div>
+            </a>
+            <a class="card" href="#">
+                <div class="card__background"
+                    style="background-image: url(img.1/romance/Pra\ sempre.jfif)">
+                </div>
+                <div class="card__content">
+                    <p class="card__category">Romance</p>
+                    <h3 class="card__heading">Para Sempre</h3>
+                </div>
+            </a>
+            <a class="card" href="/trailer.html">
+                <div class="card__background"
+                    style="background-image: url(img.1/animação/Elementos.jfif)">
+                </div>
+                <div class="card__content">
+                    <p class="card__category">Animação</p>
+                    <h3 class="card__heading">Elementos</h3>
+                </div>
+            </a>
+            <a class="card" href="#">
+                <div class="card__background"
+                    style="background-image: url(img.1/animação/Os\ croods\ 2.jfif)">
+                </div>
+                <div class="card__content">
+                    <p class="card__category">Animação</p>
+                    <h3 class="card__heading">Os Croods</h3>
+                </div>
+            </a>
+            <a class="card" href="#">
+                <div class="card__background"
+                    style="background-image: url(img.1/animação/onward.jfif)">
+                </div>
+                <div class="card__content">
+                    <p class="card__category">Animação</p>
+                    <h3 class="card__heading">Onward</h3>
+                </div>
+            </a>
+            <a class="card" href="#">
+                <div class="card__background"
+                    style="background-image: url(img.1/animação/Dois\ irmãos.jfif)">
+                </div>
+                <div class="card__content">
+                    <p class="card__category">Animação</p>
+                    <h3 class="card__heading">Dois irmãos</h3>
+                </div>
+            </a>
+            <a class="card" href="#">
+                <div class="card__background"
+                    style="background-image: url(img.1/suspense/A\ garota\ do\ trem.jfif)">
+                </div>
+                <div class="card__content">
+                    <p class="card__category">Suspense</p>
+                    <h3 class="card__heading">A garota do trem</h3>
+                </div>
+            </a>
+            <a class="card" href="#">
+                <div class="card__background"
+                    style="background-image: url(img.1/suspense/Um\ lugar\ silencioso.jfif)">
+                </div>
+                <div class="card__content">
+                    <p class="card__category">Suspense</p>
+                    <h3 class="card__heading">Um lugar silencioso</h3>
+                </div>
+            </a>
+            <a class="card" href="#">
+                <div class="card__background"
+                    style="background-image: url(img.1/suspense/Megan.jfif)">
+                </div>
+                <div class="card__content">
+                    <p class="card__category">Suspense</p>
+                    <h3 class="card__heading">Megan</h3>
+                </div>
+            </a>
+            <a class="card" href="#">
+                <div class="card__background"
+                    style="background-image: url(img.1/suspense/Um\ lugar\ bem\ longe\ daqui.jfif)">
+                </div>
+                <div class="card__content">
+                    <p class="card__category">Suspense</p>
+                    <h3 class="card__heading">Um lugar bem longe daqui</h3>
+                </div>
+            </a>
+            <a class="card" href="#">
+                <div class="card__background"
+                    style="background-image: url(img.1/terror/Pocessão.jfif)">
+                </div>
+                <div class="card__content">
+                    <p class="card__category">Terror</p>
+                    <h3 class="card__heading">Pocessão</h3>
+                </div>
+            </a>
+            <a class="card" href="#">
+                <div class="card__background"
+                    style="background-image: url(img.1/terror/Boneco\ do\ mal.jfif)">
+                </div>
+                <div class="card__content">
+                    <p class="card__category">Terror</p>
+                    <h3 class="card__heading">Boneco do mal</h3>
+                </div>
+            </a>
+            <a class="card" href="#">
+                <div class="card__background"
+                    style="background-image: url(img.1/terror/Invocação\ do\ mal.jfif)">
+                </div>
+                <div class="card__content">
+                    <p class="card__category">Terror</p>
+                    <h3 class="card__heading">Invocação do mal</h3>
+                </div>
+            </a>
+            <a class="card" href="#">
+                <div class="card__background"
+                    style="background-image: url(img.1/terror/Livrai-nos\ do\ mal.jfif)">
+                </div>
+                <div class="card__content">
+                    <p class="card__category">Terror</p>
+                    <h3 class="card__heading">Livrai-nos do mal</h3>
+                </div>
+            </a>
+            <a class="card" href="#">
+                <div class="card__background"
+                    style="background-image: url(img.1//anime/Goodzila.jfif)">
+                </div>
+                <div class="card__content">
+                    <p class="card__category">Anime</p>
+                    <h3 class="card__heading">Goodzila</h3>
+                </div>
+            </a>
+            <a class="card" href="#">
+                <div class="card__background"
+                    style="background-image: url(img.1/anime/My\ hero\ academia.jfif)">
+                </div>
+                <div class="card__content">
+                    <p class="card__category">Anime</p>
+                    <h3 class="card__heading">My hero academia</h3>
+                </div>
+            </a>
+            <a class="card" href="#">
+                <div class="card__background"
+                    style="background-image: url(img.1/anime/O\ menino\ e\ a\ garça.jfif)">
+                </div>
+                <div class="card__content">
+                    <p class="card__category">Anime</p>
+                    <h3 class="card__heading">O menino e a garça</h3>
+                </div>
+            </a>
+            <a class="card" href="#">
+                <div class="card__background"
+                    style="background-image: url(img.1/anime/Suzume.jfif)">
+                </div>
+                <div class="card__content">
+                    <p class="card__category">Anime</p>
+                    <h3 class="card__heading">Suzume</h3>
+                </div>
+            </a>
+            <a class="card" href="#">
+                <div class="card__background"
+                    style="background-image: url(img.1/ação/Furiosa.jfif)">
+                </div>
+                <div class="card__content">
+                    <p class="card__category">Ação</p>
+                    <h3 class="card__heading">Furiosa</h3>
+                </div>
+            </a>
+            <a class="card" href="#">
+                <div class="card__background"
+                    style="background-image: url(img.1/ação/Rede\ de\ vingança.jfif)">
+                </div>
+                <div class="card__content">
+                    <p class="card__category">Ação</p>
+                    <h3 class="card__heading">Rede de vingança</h3>
+                </div>
+            </a>
+            <a class="card" href="#">
+                <div class="card__background"
+                    style="background-image: url(img.1/ação/Tiro\ certo.jfif)">
+                </div>
+                <div class="card__content">
+                    <p class="card__category">Ação</p>
+                    <h3 class="card__heading">Tiro Certo</h3>
+                </div>
+            </a>
+            <a class="card" href="#">
+                <div class="card__background"
+                    style="background-image: url(img.1/ação/Vingadores.jfif)">
+                </div>
+                <div class="card__content">
+                    <p class="card__category">Ação</p>
+                    <h3 class="card__heading">Vingadoress</h3>
+                </div>
+            </a>
+            <a class="card" href="#">
+                <div class="card__background"
+                    style="background-image: url(img.1/drama/A\ forja.jfif)">
+                </div>
+                <div class="card__content">
+                    <p class="card__category">Drama</p>
+                    <h3 class="card__heading">A Forja</h3>
+                </div>
+            </a>
+            <a class="card" href="#">
+                <div class="card__background"
+                    style="background-image: url(img.1/drama/Sonho\ de\ liberdade.jfif)">
+                </div>
+                <div class="card__content">
+                    <p class="card__category">Drama</p>
+                    <h3 class="card__heading">Sonho de Liberdade</h3>
+                </div>
+            </a>
+            <a class="card" href="#">
+                <div class="card__background"
+                    style="background-image: url(img.1/drama/Som\ da\ liberdade.jfif)">
+                </div>
+                <div class="card__content">
+                    <p class="card__category">Drama</p>
+                    <h3 class="card__heading">Som da Liberdade</h3>
+                </div>
+            </a>
+            <a class="card" href="#">
+                <div class="card__background"
+                    style="background-image: url(img.1/drama/Uma\ vida\ de\ esperança.jfif)">
+                </div>
+                <div class="card__content">
+                    <p class="card__category">Drama</p>
+                    <h3 class="card__heading">Uma Vida de Esperança</h3>
+                </div>
+            </a>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
